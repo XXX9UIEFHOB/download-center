@@ -1,0 +1,31 @@
+# Cloudflare Pages + Functions 配置
+name = "download-center"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "."
+
+# D1 数据库绑定
+# 1. 先执行：npx wrangler d1 create download-center-db
+# 2. 把输出的 database_id 填到下面
+[[d1_databases]]
+binding = "DB"
+database_name = "download-center-db"
+database_id = "1f758dd9-e092-47c2-a1f3-bb2b14a43c6a"
+
+# R2 存储桶绑定（管理员上传图标/文件用）
+# 1. 先执行：npx wrangler r2 bucket create download-center
+# 2. 在控制台把桶设为“Public access”（或绑定自定义域名），拿到公共访问地址
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "download-center"
+
+# 非敏感环境变量（R2 公共访问根地址，结尾带 /）
+# 例如：https://pub-xxxxxxxxxxxxxxxxxxxx.r2.dev/
+[vars]
+R2_PUBLIC_URL = "https://data.334344.xyz/"
+
+# 敏感变量请勿写在这里，使用：
+#   本地开发：项目根目录 .dev.vars 文件
+#     ADMIN_PASSWORD=你的管理密码
+#     SESSION_SECRET=一段很长的随机字符串
+#   生产环境：npx wrangler pages secret put ADMIN_PASSWORD
+#             npx wrangler pages secret put SESSION_SECRET

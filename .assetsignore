@@ -1,0 +1,14 @@
+# 部署时不上传到 Pages 静态资源的文件（functions/ 仍会作为 Functions 部署）
+node_modules
+.git
+.wrangler
+.dev.vars
+.assetsignore
+schema.sql
+seed.sql
+scripts
+package.json
+package-lock.json
+wrangler.toml
+README.md
+.gitignore

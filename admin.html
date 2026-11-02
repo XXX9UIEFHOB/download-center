@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后台管理 - 工具库</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body class="admin-body">
+
+  <!-- 登录视图 -->
+  <section class="login-view" id="loginView">
+    <form class="login-card" id="loginForm">
+      <h1 class="login-brand">工具库 · 后台管理</h1>
+      <input type="password" id="loginPassword" placeholder="请输入管理密码" autocomplete="current-password" required>
+      <button type="submit" class="login-btn">登录</button>
+      <p class="login-error" id="loginError"></p>
+    </form>
+  </section>
+
+  <!-- 管理视图 -->
+  <section class="admin-view" id="adminView" hidden>
+    <header class="admin-header">
+      <h1>后台管理</h1>
+      <div class="admin-header-actions">
+        <a href="index.html" class="ghost-btn">返回前台</a>
+        <button id="logoutBtn" class="ghost-btn">退出登录</button>
+      </div>
+    </header>
+
+    <div class="admin-layout">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>分类</h2>
+          <button id="addCategoryBtn" class="primary-btn">＋ 新增分类</button>
+        </div>
+        <ul class="admin-list" id="categoryAdminList"></ul>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>工具</h2>
+          <button id="addToolBtn" class="primary-btn">＋ 新增工具</button>
+        </div>
+        <ul class="admin-list" id="toolAdminList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工具编辑弹窗 -->
+  <div class="modal" id="toolModal" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="toolModalTitle">新增工具</h3>
+        <button class="modal-close" id="toolModalClose" type="button">×</button>
+      </div>
+      <form id="toolForm" class="modal-form">
+        <input type="hidden" id="f-id">
+        <label>名称 *<input id="f-name" required></label>
+        <label>分类 *<select id="f-category" required></select></label>
+        <label>下载链接 *<input id="f-url" type="url" placeholder="https://..." required></label>
+        <label>简介<textarea id="f-description" rows="2"></textarea></label>
+        <div class="form-row">
+          <label>版本<input id="f-version" value="官方最新版"></label>
+          <label>大小<input id="f-size" value="以官网为准"></label>
+        </div>
+        <div class="form-row">
+          <label>平台<input id="f-platform" value="Windows"></label>
+          <label>排序<input id="f-sort" type="number" value="0"></label>
+        </div>
+        <label>图标
+          <div class="icon-row">
+            <input id="f-icon" placeholder="images/xx.png，或上传后自动填充">
+            <button type="button" id="iconUploadBtn" class="ghost-btn">上传</button>
+            <input type="file" id="iconFile" accept="image/*" hidden>
+          </div>
+        </label>
+        <div class="modal-actions">
+          <button type="button" class="ghost-btn" id="toolCancel">取消</button>
+          <button type="submit" class="primary-btn">保存</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 分类编辑弹窗 -->
+  <div class="modal" id="catModal" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="catModalTitle">新增分类</h3>
+        <button class="modal-close" id="catModalClose" type="button">×</button>
+      </div>
+      <form id="catForm" class="modal-form">
+        <input type="hidden" id="c-id">
+        <label>分类 ID（slug，如 remote）*<input id="c-id-new" placeholder="remote"></label>
+        <label>名称 *<input id="c-name" placeholder="远程工具" required></label>
+        <label>排序<input id="c-sort" type="number" value="0"></label>
+        <div class="modal-actions">
+          <button type="button" class="ghost-btn" id="catCancel">取消</button>
+          <button type="submit" class="primary-btn">保存</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
