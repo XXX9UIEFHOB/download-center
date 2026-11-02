@@ -31,6 +31,7 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
+    icon: "images/XRK.png",
     url: "https://dlj.1788.fit/xrkyc",
   },
   {
@@ -41,6 +42,7 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
+    icon: "images/UUYC.png",
     url: "https://dlj.1788.fit/uuyc",
   },
   {
@@ -51,7 +53,8 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/TODESK.png",
+    url: "https://dlj.1788.fit/td",
   },
 
   {
@@ -62,6 +65,7 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
+    icon: "images/TBGJX.png",
     url: "https://download.1788.fit/d/%E7%A7%BB%E5%8A%A8%E4%BA%91%E7%9B%98/1%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/lcx/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B1202309.zip",
   },
 
@@ -73,7 +77,7 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    url: "https://list.334344.xyz/d/cloudflare/%E5%B7%A5%E5%85%B7/360%E4%B8%87%E8%83%BD%E7%BD%91%E5%8D%A1%E9%A9%B1%E5%8A%A8.exe?sign=0.c779f838d79654b1340e9d0a526281f8b167468990be0fdca329bb12fd55cfb4",
   },
   {
     name: "火绒安全",
@@ -83,6 +87,7 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
+    icon: "images/HUOTONG.png",
     url: "https://huorong.cn/person5.html",
   },
   {
@@ -127,6 +132,7 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
+    icon: "images/FIRPE.png",
     url: "https://download.1788.fit/d/%E7%A7%BB%E5%8A%A8%E4%BA%91%E7%9B%98/1%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/lcx/FirPE-V2.1.1.exe",
   },
 
@@ -138,7 +144,8 @@ const tools = [
     version: "23h2",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/win11.png",
+    url: "https://list.334344.xyz/d/OneDrive/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/WIN11/zh-cn_windows_11_business_editions_version_23h2_updated_sep_2024_x64_dvd_22316bf2.iso?sign=0.eb632b8d5534a8b1a3cae31b319c3ecfd086ae985d5f2684bf69a51bbb33c1b8",
   },
 
   {
@@ -149,7 +156,8 @@ const tools = [
     version: "24h2",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/win11.png",
+    url: "https://list.334344.xyz/d/OneDrive/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/WIN11/zh-cn_windows_11_business_editions_version_24h2_updated_sep_2025_x64_dvd_84877922.iso?sign=0.4ff51a1f7661278bc4168f01b96f7a99ae7bb30d1af60289a8d5121bb52408c1",
   },
 
   {
@@ -160,7 +168,9 @@ const tools = [
     version: "25h2",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/win11.png",
+
+    url: "https://list.334344.xyz/d/OneDrive/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/WIN11/zh-cn_windows_11_business_editions_version_25h2_updated_sep_2026_x64_dvd_e10f7b29.iso?sign=0.00e06df986d9aeaf59c8d32aa55324b38fa44875e7c0060e9102f95e3d861163",
   },
   {
     name: "win11 26h2",
@@ -170,7 +180,9 @@ const tools = [
     version: "26h2",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/win11.png",
+
+    url: "https://list.334344.xyz/d/OneDrive/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/WIN11/zh-cn_windows_11_business_editions_version_26h2_x64_dvd_74d48a06.iso?sign=0.ec51599257e5004431be64586fcd2abc7dffed3f4deeefcba7f5700e05f40a60",
   },
 
   {
@@ -181,7 +193,8 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/win10.png",
+    url: "https://list.334344.xyz/d/OneDrive/%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/WIN10/zh-cn_windows_10_business_editions_version_22h2_updated_sep_2025_x64_dvd_86874d1c.iso?sign=0.0f5f99f71020490ff9d1a94db5c5b536dae589840e535470b575f574a0b163e9",
   },
 
   {
@@ -192,7 +205,8 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/WinRAR.png",
+    url: "https://list.334344.xyz/d/cloudflare/%E5%B7%A5%E5%85%B7/%E8%A7%A3%E5%8E%8B%E5%B7%A5%E5%85%B7/winrar.exe?sign=0.5a3f3e6db411d2a3ab7e26445463af8b5bdcda0ab0602a94c293793b545eebd9",
   },
 
   {
@@ -203,7 +217,8 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/7zip.png",
+    url: "https://ds.334344.xyz/%E5%B7%A5%E5%85%B7/%E8%A7%A3%E5%8E%8B%E5%B7%A5%E5%85%B7/7z.exe",
   },
 
   {
@@ -214,7 +229,8 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/Bandizip.png",
+    url: "https://list.334344.xyz/d/cloudflare/%E5%B7%A5%E5%85%B7/%E8%A7%A3%E5%8E%8B%E5%B7%A5%E5%85%B7/BANDIZIP-SETUP-STD-X64.EXE?sign=0.b8b92e74ea14a92a476742ed283aefafc022b3bb6ba53f67048e4e12298cdb67",
   },
 
   {
@@ -225,7 +241,8 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/QQ.png",
+    url: "https://im.qq.com/index/#/",
   },
 
   {
@@ -236,29 +253,32 @@ const tools = [
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/Wechat.png",
+    url: "https://weixin.qq.com/",
   },
 
   {
     name: "steam",
-    category: "archive",
+    category: "common",
     description:
       "知名的数字游戏平台，提供游戏购买、下载更新、云存档、好友互动和社区功能。",
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/steam.png",
+    url: "https://store.steampowered.com/about/",
   },
 
   {
     name: "UU加速器",
-    category: "archive",
+    category: "common",
     description:
       "网易出品的游戏网络加速工具，可降低延迟与丢包，支持多款国内外热门游戏。",
     version: "官方最新版",
     size: "以官网为准",
     platform: "Windows",
-    url: "https://crystalmark.info/en/software/crystaldiskinfo/",
+    icon: "images/uu.png",
+    url: "https://uu.163.com/download/",
   },
 ];
 
