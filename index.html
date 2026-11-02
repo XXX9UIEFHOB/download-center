@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工具库 - 软件下载中心</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a4 4 0 0 0-5-5L12 3.6 9.6 6 7.3 3.7a4 4 0 0 0 5 5L4 17a2.1 2.1 0 0 0 3 3l8.3-8.3a4 4 0 0 0 5-5L18 9l-2.4-2.4L18 4.3a4 4 0 0 0-3.3 2Z"/>
+        </svg>
+      </span>
+      工具库
+    </div>
+    <nav class="top-nav" aria-label="顶部导航">
+      <button class="nav-btn" id="adminBtn">后台管理</button>
+    </nav>
+  </header>
+
+  <aside class="sidebar">
+    <nav class="category-list" id="categoryList" aria-label="工具分类"></nav>
+    <div class="sidebar-tip">
+      <strong>下载提示</strong>
+      下载按钮将跳转至软件官方网站，请在官网获取最新版本。
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="content">
+      <div class="search-row">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path>
+          </svg>
+          <input class="search-input" id="searchInput" type="search" placeholder="搜索工具名称或功能..." autocomplete="off" aria-label="搜索工具">
+          <button class="clear-search" id="clearSearch" aria-label="清空搜索">×</button>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <h1 id="sectionTitle">全部工具</h1>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+
+      <section class="tools-grid" id="toolsGrid" aria-live="polite"></section>
+      <section class="empty-state" id="emptyState">
+        <div class="empty-icon">⌕</div>
+        <h3>没有找到相关工具</h3>
+        <p>试试其他关键词，或切换左侧分类查看。</p>
+      </section>
+      <footer class="page-footer">软件版权归原作者所有，请从官方渠道下载并遵循相关许可协议。</footer>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
