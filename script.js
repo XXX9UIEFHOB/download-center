@@ -362,8 +362,8 @@ function renderTools() {
         <span>${tool.size}</span><i class="meta-dot"></i>
         <span>${tool.platform}</span>
       </div>
-      <a class="download-btn" href="${tool.url}" target="_blank" rel="noopener noreferrer" data-tool="${tool.name}" aria-label="前往 ${tool.name} 官网下载">
-        ${downloadIcon}<span>点我下载</span>
+      <a class="download-btn" href="${tool.url}" target="_blank" rel="noopener noreferrer" data-tool="${tool.name}" aria-label="下载 ${tool.name}">
+        ${downloadIcon}<span>下载</span>
       </a>
     </article>`,
     )
@@ -393,7 +393,14 @@ clearSearch.addEventListener("click", () => {
 
 toolsGrid.addEventListener("click", (event) => {
   const link = event.target.closest(".download-btn");
-  if (link) showToast(`正在打开 ${link.dataset.tool} 官方下载页`);
+  if (link) showToast(`正在打开 ${link.dataset.tool} 下载链接`);
+});
+
+document.getElementById("resetFilters").addEventListener("click", () => {
+  searchInput.value = "";
+  activeCategory = "all";
+  renderCategories();
+  renderTools();
 });
 
 function showToast(message) {
